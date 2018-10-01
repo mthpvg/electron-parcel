@@ -1,0 +1,25 @@
+{
+  "name": "electron-parcel",
+  "version": "1.0.0",
+  "description": "## Install ```bash git clone git@github.com:mthpvg/electron-parcel.git cd electron-parcel ```",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^3.0.2",
+    "parcel-bundler": "^1.10.1"
+  },
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "start": "npm run build && bash ./electron/relative-html.sh && electron ./electron/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthpvg/electron-parcel.git"
+  },
+  "author": "mthpvg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mthpvg/electron-parcel/issues"
+  },
+  "homepage": "https://github.com/mthpvg/electron-parcel#readme"
+}
