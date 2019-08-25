@@ -1,4 +1,5 @@
 const path = require('path')
+
 const {app, BrowserWindow} = require('electron')
 
 
@@ -10,7 +11,7 @@ function createWindow () {
   mainWindow.loadFile(path.resolve('./dist/electron.html'))
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   mainWindow.on('closed', function () {
     mainWindow = null
